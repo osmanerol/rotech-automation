@@ -67,7 +67,10 @@ export default {
               </li>
               <li>
                 <b-icon icon="envelope-fill" />
-                <a href="mailto:info@rotechautomation.com">info@rotechautomation.com</a>
+                <a 
+                  href="mailto:info@rotechautomation.com"
+                  class="mail-link"
+                >info@rotechautomation.com</a>
               </li>
               <li class="social-icons">
                 <a 
@@ -107,7 +110,7 @@ export default {
       </b-row>
     </b-container>
     <div class="copyright">
-      <span>Copyright 2021 © Tüm hakları saklıdır.</span>
+      <small>Copyright 2021 © Tüm hakları saklıdır.</small>
     </div>
   </footer>
 </template>
@@ -144,11 +147,20 @@ footer {
           list-style: none;
           margin: 0;
           li {
+            display: flex;
+            flex-direction: row;
             a {
               text-decoration: none;
               color: var(--color-gray-01);
             }
+            .mail-link {
+              &:hover {
+                color: var(--color-blue-01);
+                text-decoration: underline;
+              }
+            }
             .b-icon {
+              margin-top: 4.3px;
               margin-right: 8px;
             }
           }
@@ -156,6 +168,7 @@ footer {
             margin-top: 20px;
             .b-icon {
               font-size: 24px;
+              margin-right: 14px! important;
             }
             .facebook-icon, .instagram-icon, .linkedin-icon, .mail-icon {
               &:hover {
@@ -214,7 +227,7 @@ footer {
 @media screen and (max-width: 767px) {
   footer {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     .row {
       .footer-item {
         h1 {

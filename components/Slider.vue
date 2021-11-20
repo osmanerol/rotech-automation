@@ -9,17 +9,17 @@ export default {
   created() {
     this.slideContents = [
       {
-        image: 'https://static.magento.com/sites/default/files8/DB_Shenker_Industrial_Automation_Magento_Blog.jpg',
+        image: 'https://images.unsplash.com/photo-1581093803931-46e730e7622e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
         caption: 'Header 1',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse culpa cum exercitationem ea, nisi atque obcaecati, quo nostrum ab id dignissimos aspernatur ratione, at delectus. Esse voluptatem sed eligendi.'
       },
       {
-        image: 'https://www.airtract.com/Media/Article/ArticleImages/552d32aa-3-201904021057543369.jpg',
+        image: 'https://images.unsplash.com/photo-1593106410302-2db73598ccf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGF1dG9tYXRpb258ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
         caption: 'Header 2',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse culpa cum exercitationem ea, nisi atque obcaecati, quo nostrum ab id dignissimos aspernatur ratione, at delectus. Esse voluptatem sed eligendi.'
       },
       {
-        image: 'https://industrytoday.com/wp-content/uploads/2018/11/robot-automation-2.jpg',
+        image: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         caption: 'Header 3',
         text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse culpa cum exercitationem ea, nisi atque obcaecati, quo nostrum ab id dignissimos aspernatur ratione, at delectus. Esse voluptatem sed eligendi.'
       },
@@ -30,25 +30,6 @@ export default {
 
 <template>
   <section class="slider">
-    <!--
-    <b-carousel
-      id="carousel-fade"
-      :interval="3000"
-      fade
-      img-height="1000"
-      indicators
-      background="#ababab"
-      style="text-shadow: 0px 0px 2px #000"
-    >
-      <b-carousel-slide
-        v-for="(item, index) in slideContents"
-        :key="index"
-        :caption="item.caption"
-        :text="item.text"
-        :img-src="item.image"
-      ></b-carousel-slide>
-    </b-carousel>
-    -->
     <b-carousel
       id="carousel-fade"
       :interval="3000"
@@ -103,7 +84,7 @@ export default {
     .carousel {
       .carousel-inner {
         .carousel-item {
-          height: 540px! important;
+          height: 520px! important;
         }
       }
     }

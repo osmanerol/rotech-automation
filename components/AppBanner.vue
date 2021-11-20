@@ -58,7 +58,7 @@ export default {
 
 @media screen and (min-width: 768px) {
   .main-banner {
-    height: 240px;
+    height: 220px;
   }
 }
 

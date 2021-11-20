@@ -49,6 +49,7 @@ export default {
 .app {
   main {
     transition: .5s all;
+    min-height: calc(100vh - 200px);
   }
 }
 

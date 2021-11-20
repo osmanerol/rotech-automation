@@ -117,6 +117,9 @@ header {
     .toggle-drawer {
       .menu-icon {
         font-size: 26px! important;
+        &:focus {
+          outline: none! important;
+        }
       }
     }
   }

@@ -21,12 +21,12 @@ export default {
   <section class="corporate">
     <app-banner 
       content="Kurumsal" 
-      image-source="https://images.unsplash.com/photo-1418065460487-3e41a6c84dc5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" 
+      image-source="https://images.unsplash.com/photo-1563968743333-044cef800494?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
     />
-    <b-container>
-      <div class="text-container pt-5">
+    <b-container >
+      <div class="corporate-info">
         <app-title text="Hakkımızda" />
-        <div class="text-content mt-4">
+        <div class="text-content">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
@@ -34,16 +34,16 @@ export default {
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
         </div>
       </div>
-      <div class="text-container pt-5">
+      <div class="corporate-info">
         <app-title text="Vizyonumuz" />
-        <div class="text-content mt-4">
+        <div class="text-content">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
         </div>
       </div>
-      <div class="text-container py-5">
+      <div class="corporate-info">
         <app-title text="Misyonumuz" />
-        <div class="text-content mt-4">
+        <div class="text-content">
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
@@ -55,11 +55,45 @@ export default {
 
 <style lang="scss" scoped>
 .corporate {
-  .text-container {
+  .corporate-info {
     .text-content {
       p {
         margin-bottom: 6px;
         font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .corporate {
+    .container {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .corporate-info {
+        &:not(:last-child) {
+          padding-bottom: 30px;
+        }
+        .text-content {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .corporate {
+    .container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      .corporate-info {
+        &:not(:last-child) {
+          padding-bottom: 15px;
+        }
+        .text-content {
+          padding-top: 10px;
+        }
       }
     }
   }

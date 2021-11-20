@@ -19,7 +19,6 @@ export default {
   font-weight: 700;
   position: relative;
   margin-bottom: 13px;
-  font-size: 27px;
   &::after {
     position: absolute;
     content: '';
@@ -32,8 +31,14 @@ export default {
 }
 
 @media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .main-title {
+    font-size: 22px;
+  }
 }
 </style>
