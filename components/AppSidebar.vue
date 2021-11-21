@@ -81,7 +81,7 @@ export default {
           font-weight: 700;
           color: var(--color-black-01);
           text-decoration: none;
-          font-size: 20px;
+          font-size: 18px;
         }
         .nuxt-link-active {
           padding-left: 20px;

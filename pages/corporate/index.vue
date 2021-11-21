@@ -1,13 +1,6 @@
 <script>
-import AppBanner from '~/components/AppBanner.vue'
-import AppTitle from '~/components/AppTitle.vue'
-
 export default {
   name: 'Corporate',
-  components: {
-    AppBanner,
-    AppTitle
-  },
   scrollToTop: true,
   head() {
     return {
@@ -55,6 +48,7 @@ export default {
 
 <style lang="scss" scoped>
 .corporate {
+  flex: 1;
   .corporate-info {
     .text-content {
       p {

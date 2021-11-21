@@ -1,13 +1,7 @@
 <script>
-import AppBanner from '~/components/AppBanner.vue'
-import AppTitle from '~/components/AppTitle.vue'
 
 export default {
   name: 'Contact',
-  components: {
-    AppBanner,
-    AppTitle
-  },
   scrollToTop: true,
   head() {
     return {
@@ -32,7 +26,7 @@ export default {
           >
             <div class="contact-title">
               <app-title text="Bizimle İletişime Geçin" />
-              <p class="pt-2 m-0">Otomasyon sistemleriniz ve robotlu endüstriyel tesisleriniz ile ilgili hizmetlerimiz hakkında bilgi ve teklif almak isterseniz aşağıdaki iletişim yollarından bizimle iletişime geçebilirsiniz.</p>
+              <p class="pt-3 m-0">Otomasyon sistemleriniz ve robotlu endüstriyel tesisleriniz ile ilgili hizmetlerimiz hakkında bilgi ve teklif almak isterseniz aşağıdaki iletişim yollarından bizimle iletişime geçebilirsiniz.</p>
             </div>
             <div class="contact-content pt-3">
               <h1 class="company-name m-0">Rotech Automation, Robot Otomasyon Sistemleri Ticaret ve Sanayi Limited Şirketi</h1>
@@ -104,6 +98,7 @@ export default {
 
 <style lang="scss" scoped>
 .contact {
+  flex: 1;
   .contact-info {
     .contact-content {
       .company-name {
@@ -162,6 +157,7 @@ export default {
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   .contact {
     .container {
@@ -178,7 +174,7 @@ export default {
       padding-bottom: 30px;
       .contact-info {
         .map {
-          padding-top: 20px;
+          padding-top: 30px;
         }
       }
     }

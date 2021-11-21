@@ -1,11 +1,6 @@
 <script>
-import AppBanner from '~/components/AppBanner.vue'
-
 export default {
   name: 'Products',
-  components: {
-    AppBanner
-  },
   scrollToTop: true,
   head() {
     return {
@@ -28,6 +23,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.products {
+  flex: 1;
+}
+
 @media screen and (min-width: 768px) {
   .products {
     .container {

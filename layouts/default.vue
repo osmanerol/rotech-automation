@@ -1,19 +1,16 @@
 <script>
-import AppHeader from '../components/AppHeader.vue'
-import AppSidebar from '../components/AppSidebar.vue'
-import AppFooter from '../components/AppFooter.vue'
-
 export default {
   name: 'Default',
-  components: {
-    AppHeader,
-    AppSidebar,
-    AppFooter
-  },
   data() {
     return {
       isTopControl: true,
+      showMatrix: true,
     }
+  },
+  created() {
+    setTimeout(() => {
+      this.showMatrix = false
+    }, 4000)
   },
   mounted() {
     window.addEventListener('scroll', this.scrollControl)
@@ -33,14 +30,29 @@ export default {
 
 <template>
   <div class="app">
-    <app-header />
-    <app-sidebar />
-    <main
-      :class="{ 'isMainTop' : isTopControl }"
+    <transition-group 
+      name="fade" 
+      class="transition"
     >
-      <Nuxt />
-    </main>
-    <app-footer />
+      <matrix 
+        v-if="showMatrix" 
+        key="matrix" 
+      />
+      <div 
+        v-if="!showMatrix" 
+        key="template" 
+        class="template"
+      >
+        <app-header />
+        <app-sidebar />
+        <main
+          :class="{ 'isMainTop' : isTopControl }"
+        >
+          <Nuxt />
+        </main>
+        <app-footer />
+      </div>
+    </transition-group>
   </div>
 </template>
 
@@ -50,6 +62,29 @@ export default {
   main {
     transition: .5s all;
     min-height: calc(100vh - 200px);
+    display: flex;
+  }
+  .transition {
+    .template {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .fade-enter {
+      transform: translatex(100%);
+      opacity: 0;
+    }
+    .fade-enter-to {
+      transform: translatex(0);
+      opacity: 1;
+    }
+    .fade-leave-to {
+      transform: translatex(-100%);
+      opacity: 0;
+    }
+    .fade-enter-active, .fade-leave-active {
+      transition: 2s;
+    }
   }
 }
 

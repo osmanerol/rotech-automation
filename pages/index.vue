@@ -1,13 +1,6 @@
 <script>
-import Slider from '~/components/Slider.vue'
-import AppTitle from '~/components/AppTitle.vue'
-
 export default {
   name: 'Home',
-  components: {
-    Slider,
-    AppTitle
-  },
   scrollToTop: true,
   data() {
     return {
@@ -75,12 +68,14 @@ export default {
             <app-title text="Rotech Automation Hakkında" />
             <p class="pt-2">Rotech Automation, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure amet rem debitis labore culpa, reiciendis ex temporibus nam optio, consequatur rerum eligendi dolores suscipit omnis voluptates ab explicabo eos.</p>
             <p>Rotech Automation, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure amet rem debitis labore culpa, reiciendis ex temporibus nam optio, consequatur rerum eligendi dolores suscipit omnis voluptates ab explicabo eos.</p>
-            <NuxtLink 
-              to="/corporate"
-              class="about-button mt-2"
-            >
-              Hakkımızda
-            </NuxtLink>
+            <div class="pt-2">
+              <NuxtLink 
+                to="/corporate"
+                class="about-button"
+              >
+                Hakkımızda
+              </NuxtLink>
+            </div>
           </b-col>
           <b-col
             class="about-item"
@@ -116,6 +111,7 @@ export default {
 
 <style lang="scss" scoped>
 .home {
+  flex: 1;
   .make-container {
     .make-item {
       h1 {
