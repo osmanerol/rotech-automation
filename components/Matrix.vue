@@ -1,6 +1,16 @@
 <script>
 export default {
   name: 'Matrix',
+  data() {
+    return {
+      showText: false
+    }
+  },
+  created() {
+    setTimeout(() => {
+      this.showText = true
+    }, 1000)
+  },
   mounted() {
     const c = document.getElementById("canvas")
     const ctx = c.getContext("2d")
@@ -36,18 +46,37 @@ export default {
 <template>
   <div class="matrix">
     <canvas id="canvas" />
-    <div class="title">
-      <h1>ROTECH</h1>
-      <h1>AUTOMATION</h1>
-    </div>
+    <transition name="fade">
+      <div 
+        v-if="showText"
+        class="title"
+      >
+        <h1>ROTECH</h1>
+        <h1>AUTOMATION</h1>
+      </div>
+    </transition>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .matrix {
   height: 100vh;
+  max-height: -webkit-fill-available;
   width: inherit;
   position: relative;
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-to {
+    opacity: 1;
+  }
+  .fade-enter-active {
+    transition: 1s;
+  }
   .title {
     position: absolute;
     width: 100%;
@@ -64,6 +93,10 @@ export default {
       opacity: .6;
       color: var(--color-matrix-01);
       font-size: 36px;
+      margin: 0;
+      &:first {
+        padding-bottom: 10px;
+      }
     }
   }
 }
