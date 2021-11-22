@@ -5,16 +5,13 @@ export default {
   data() {
     return {
       isTopControl: true,
-      showMatrix: false,
-      // showMatrix: true,
+      showMatrix: true,
     }
   },
   created() {
-    /*
     setTimeout(() => {
       this.showMatrix = false
     }, 4000)
-    */
   },
   mounted() {
     window.addEventListener('scroll', this.scrollControl)
