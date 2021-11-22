@@ -19,6 +19,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/variables/color.css',
+    '@/assets/variables/font.css',
     '@/assets/app.scss'
   ],
 
@@ -33,7 +35,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/style-resources'
+    // '@nuxtjs/style-resources'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,9 +46,11 @@ export default {
     '@nuxtjs/axios',
   ],
 
+  /*
   styleResources: {
-    scss: './assets/variables/*.scss'
+    scss: './assets/variables/*.scss',
   },
+  */
 
   bootstrapVue: {
     icons: true

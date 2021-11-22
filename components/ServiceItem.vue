@@ -29,13 +29,13 @@ export default {
 <style lang="scss" scoped>
 .service-item {
   position: relative;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .6s;
+    transition: 1s;
   }
   .title {
     position: absolute;
@@ -54,7 +54,7 @@ export default {
     }
   }
   &:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     img {
       transform: scale(1.2);
     }

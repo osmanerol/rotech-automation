@@ -61,27 +61,31 @@ export default {
 <style lang="scss" scoped>
 ::v-deep {
   .b-sidebar {
-    max-width: 240px;
-    background-color: var(--color-white-01);
+    width: 100%;
+    z-index: 1;
     .b-sidebar-header {
       height: 68px;
     }
     .b-sidebar-body {
       .sidebar-links {
+        padding-top: 40px;
         ul {
           list-style: none;
           padding: 0;
           margin: 0;
-        }
-        .sidebar-link {
-          font-weight: 700;
-          color: var(--color-black-01);
-          text-decoration: none;
-          font-size: 18px;
-        }
-        .nuxt-link-active {
-          padding-left: 20px;
-          color: var(--color-blue-01)! important;
+          li {
+            text-align: center;
+            .sidebar-link {
+              font-weight: 800;
+              color: var(--color-black-01);
+              opacity: .9;
+              text-decoration: none;
+              font-size: 28px;
+            }
+            .nuxt-link-active {
+              color: var(--color-blue-01)! important;
+            }
+          }
         }
       }
     }

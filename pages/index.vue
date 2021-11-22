@@ -4,6 +4,7 @@ export default {
   scrollToTop: true,
   data() {
     return {
+      makes: [],
       partners: [],
       services: []
     }
@@ -14,6 +15,20 @@ export default {
     }
   },
   created() {
+    this.makes = [
+      {
+        title: 'Tasarım & Simulasyon',
+        text: 'Robotlu otomasyon sistemlerinizi devreye almadan önce tasarım ve simülasyonlarını sanal ortamda yaparak performanslarını ortaya koyuyoruz.'
+      },
+      {
+        title: 'Kurulum & Devreye Alma',
+        text: 'Robot – Otomasyon tesislerini sahanızda uzman kadromuzla tam zamanında devreye alıyoruz.'
+      },
+      {
+        title: 'Mühendislik & Danışmanlık',
+        text: 'Devreye aldığımız otomasyon ve robot sistemlerinin mühendislik çalışmalarını prosesinize tam uyumlu ve esnek bir şekilde gerçekleştiriyoruz.'
+      },
+    ]
     this.partners = [
       'https://www.robomaker.com.tr/uploads/f-1_op.jpg',
       'https://www.robomaker.com.tr/uploads/f-2_op.jpg',
@@ -58,28 +73,14 @@ export default {
         <app-title text="Ne Yapıyoruz ?" />
         <b-row>
           <b-col 
+            v-for="(item, index) in makes"
+            :key="index"
             class="make-item"
             md="4"
             cols="12"
           >
-            <h1 class="mb-2">Tasarım & Simulasyon</h1>
-            <span>Robotlu otomasyon sistemlerinizi devreye almadan önce tasarım ve simülasyonlarını sanal ortamda yaparak performanslarını ortaya koyuyoruz.</span>
-          </b-col>
-          <b-col 
-            class="make-item"
-            md="4"
-            cols="12"
-          >
-            <h1 class="mb-2">Kurulum & Devreye Alma</h1>
-            <span>Robot – Otomasyon tesislerini sahanızda uzman kadromuzla tam zamanında devreye alıyoruz.</span>
-          </b-col>
-          <b-col 
-            class="make-item"
-            md="4"
-            cols="12"
-          >
-            <h1 class="mb-2">Mühendislik & Danışmanlık</h1>
-            <span>Devreye aldığımız otomasyon ve robot sistemlerinin mühendislik çalışmalarını prosesinize tam uyumlu ve esnek bir şekilde gerçekleştiriyoruz.</span>
+            <h1 class="mb-2">{{ item.title }}</h1>
+            <span>{{ item.text }}</span>
           </b-col>
         </b-row>
       </div>
@@ -242,7 +243,7 @@ export default {
   .home {
     .make-container {
       padding-top: 60px;
-      padding-bottom: 60px;
+      padding-bottom: 100px;
       .row {
         .make-item {
           padding-top: 20px;
@@ -253,11 +254,15 @@ export default {
       }
     }
     .about-me-container {
-      padding-top: 60px;
       padding-bottom: 60px;
       .row {
-        .about-item:last-child {
+        .about-item:first-child {
+          order: 2;
           margin-top: 30px;
+        }
+        .about-item:last-child {
+          order: 1;
+          margin-top: -40px;
         } 
       }
     }

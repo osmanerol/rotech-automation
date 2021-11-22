@@ -87,7 +87,7 @@ export default {
     }
     .fade-leave-to {
       transform: translatex(-100%);
-      opacity: .5;
+      opacity: .8;
     }
     .fade-enter-active, .fade-leave-active {
       transition: 2s;

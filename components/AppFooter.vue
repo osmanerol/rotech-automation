@@ -1,6 +1,31 @@
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
+  data() {
+    return {
+      links: []
+    }
+  },
+  created() {
+    this.links = [
+      {
+        name: 'Anasayfa',
+        path: '/'
+      },
+      {
+        name: 'Kurumsal',
+        path: '/corporate'
+      },
+      {
+        name: 'Hizmetler',
+        path: '/services'
+      },
+      {
+        name: 'İletişim',
+        path: '/contact'
+      },
+    ]
+  },
 }
 </script>
 
@@ -26,25 +51,14 @@ export default {
           <h1>Kısayol Bağlantıları</h1>
           <div class="description">
             <ul>
-              <li>
+              <li
+                v-for="(item, index) in links"
+                :key="index"
+              >
                 <b-icon icon="chevron-double-right" />
-                <NuxtLink to='/'>Anasayfa</NuxtLink>
-              </li>
-              <li>
-                <b-icon icon="chevron-double-right" />
-                <NuxtLink to='/corporate'>Kurumsal</NuxtLink>
-              </li>
-              <li>
-                <b-icon icon="chevron-double-right" />
-                <NuxtLink to='/services'>Hizmetler</NuxtLink>
-              </li>
-              <li>
-                <b-icon icon="chevron-double-right" />
-                <NuxtLink to='/products'>Ürünler</NuxtLink>
-              </li>
-              <li>
-                <b-icon icon="chevron-double-right" />
-                <NuxtLink to='/contact'>İletişim</NuxtLink>
+                <NuxtLink :to="item.path">
+                  {{ item.name }}
+                </NuxtLink>
               </li>
             </ul>
           </div>
