@@ -1,27 +1,32 @@
 <script>
 export default {
   name: 'Default',
+  scrollToTop: true,
   data() {
     return {
       isTopControl: true,
-      showMatrix: true,
+      showMatrix: false,
+      // showMatrix: true,
     }
   },
   created() {
+    /*
     setTimeout(() => {
       this.showMatrix = false
     }, 4000)
+    */
   },
   mounted() {
     window.addEventListener('scroll', this.scrollControl)
+    window.scrollTo({ top:0 })
   },
   methods: {
     scrollControl() {
       if(window.pageYOffset === 0) {
-        this.isTopControl = true;
+        this.isTopControl = true
       }
       else {
-        this.isTopControl = false;
+        this.isTopControl = false
       }
     }
   }
@@ -53,6 +58,11 @@ export default {
         <app-footer />
       </div>
     </transition-group>
+    <transition name="scroll">
+      <scroll-to-top
+        v-if="!isTopControl"
+      />
+    </transition>
   </div>
 </template>
 
@@ -80,21 +90,30 @@ export default {
     }
     .fade-leave-to {
       transform: translatex(-100%);
-      opacity: 0;
+      opacity: .5;
     }
     .fade-enter-active, .fade-leave-active {
       transition: 2s;
     }
+  }
+  .scroll-enter, .scroll-leave-to {
+    opacity: 0;
+  }
+  .scroll-enter-to, .scroll-leave {
+    opacity: 1;
+  }
+  .scroll-enter-active, .scroll-leave-active {
+    transition: .6s;
   }
 }
 
 @media screen and (min-width: 768px) {
   .app {
     .isMainTop {
-      margin-top: 90px! important;
+      margin-top: 110px! important;
     }
     main {
-      margin-top: 70px;
+      margin-top: 90px;
     }
   }
 }
@@ -102,10 +121,10 @@ export default {
 @media screen and (max-width: 767px) {
   .app {
     .isMainTop {
-      margin-top: 70px! important;
+      margin-top: 90px! important;
     }
     main {
-      margin-top: 60px;
+      margin-top: 70px;
     }
   }
 }

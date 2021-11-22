@@ -21,10 +21,6 @@ export default {
         path: '/services'
       },
       {
-        name: 'ÜRÜNLER',
-        path: '/products'
-      },
-      {
         name: 'İLETİŞİM',
         path: '/contact'
       },

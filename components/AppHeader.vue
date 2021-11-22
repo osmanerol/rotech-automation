@@ -22,10 +22,6 @@ export default {
         path: '/services'
       },
       {
-        name: 'ÜRÜNLER',
-        path: '/products'
-      },
-      {
         name: 'İLETİŞİM',
         path: '/contact'
       },
@@ -128,10 +124,10 @@ header {
 @media screen and (min-width: 768px) {
   header {
     .isHeaderTop {
-      height: 90px! important;
+      height: 110px! important;
     }
     .navbar {
-      height: 70px;
+      height: 90px;
     }
   }
 }
@@ -139,10 +135,10 @@ header {
 @media screen and (max-width: 767px) {
   header {
     .isHeaderTop {
-      height: 70px! important;
+      height: 90px! important;
     }
     .navbar {
-      height: 60px;
+      height: 70px;
     }
   }
 }

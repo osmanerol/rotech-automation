@@ -4,7 +4,8 @@ export default {
   scrollToTop: true,
   data() {
     return {
-      partners: []
+      partners: [],
+      services: []
     }
   },
   head() {
@@ -18,6 +19,32 @@ export default {
       'https://www.robomaker.com.tr/uploads/f-2_op.jpg',
       'https://www.robomaker.com.tr/uploads/f-3_op.jpg',
       'https://www.robomaker.com.tr/uploads/f-4_op.jpg',
+    ]
+    this.services = [
+      {
+        image: 'https://images.unsplash.com/photo-1589320011103-48e428abcbae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        title: 'Üretim ve Montaj Hattı'
+      },
+      {
+        image: 'https://media.istockphoto.com/photos/cloud-network-solution-picture-id1273823720?b=1&k=20&m=1273823720&s=170667a&w=0&h=ABsUVn4aZc1_nn2ftEijeVpIBeKTiTxuAH1hFdTIo7c=',
+        title: 'Yazılım & Otomasyon'
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1579803165101-cfc62dfdbe45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFjaGluZSUyMGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        title: 'Özel Makina İmalatı'
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjdG9yeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+        title: 'AGV Sistemleri'
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        title: 'Endüstriyel Görüntü İşleme'
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1535923430552-0ce3cd477cc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29udmV5b3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        title: 'Konveyör Sistemleri'
+      },
     ]
   }
 }
@@ -91,9 +118,26 @@ export default {
       </b-container>
     </div>
     <b-container>
+      <div class="services">
+        <app-title text="Hizmetlerimiz" />
+        <b-row>
+          <b-col
+            v-for="(item, index) in services"
+            :key="index"
+            lg="4"
+            md="6"
+            cols="12"
+          >
+            <service-item
+              :image="item.image"
+              :title="item.title"
+            />
+          </b-col>
+        </b-row>
+      </div>
       <div class="partners">
         <app-title text="Partnerlerimiz" />
-        <b-row class="pt-4">
+        <b-row class="pt-5">
           <b-col 
             v-for="(item, index) in partners"
             :key="index"
@@ -128,6 +172,7 @@ export default {
         position: relative;
         img {
           width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         .about-button {
           background-color: var(--color-blue-01);
@@ -184,6 +229,9 @@ export default {
       }
     }
   }
+  .services {
+    padding-top: 120px;
+  }
   .partners {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -212,6 +260,9 @@ export default {
           margin-top: 30px;
         } 
       }
+    }
+    .services {
+      padding-top: 60px;
     }
     .partners {
       padding-top: 60px;
