@@ -46,7 +46,7 @@ export default {
         >
           <NuxtLink 
             :to="item.path" 
-            exact
+            :exact="item.path == '/'"
             sidebar-link   
             class="sidebar-link"
           >
