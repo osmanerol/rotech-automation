@@ -13,5 +13,18 @@ html {
     &::-webkit-scrollbar-thumb {
       background-color: var(--color-scrollbar-thumb);
     }
+    .breadcrumb-container {
+      display: flex;
+      justify-content: flex-end;
+      .breadcrumb {
+        background-color: var(--color-white-01);
+        li {
+          font-size: 14px;
+          a {
+            color: var(--color-blue-01);
+          }
+        }
+      }
+    }
   }
 }

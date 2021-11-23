@@ -17,13 +17,11 @@ export default {
       */
       {
         image: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-        caption: 'Header 1',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse culpa cum exercitationem ea, nisi atque obcaecati, quo nostrum ab id dignissimos aspernatur ratione, at delectus. Esse voluptatem sed eligendi.'
+        caption: 'More technology for the future',
       },
       {
         image: 'https://images.unsplash.com/photo-1593106410302-2db73598ccf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGF1dG9tYXRpb258ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-        caption: 'Header 2',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse culpa cum exercitationem ea, nisi atque obcaecati, quo nostrum ab id dignissimos aspernatur ratione, at delectus. Esse voluptatem sed eligendi.'
+        caption: "You want it, We'll do it",
       },
     ]
   }
@@ -54,7 +52,6 @@ export default {
             alt="image slot"
           >
         </template>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, cum. Tenetur, earum! Fugiat hic quam sapiente tenetur iure, sint laborum facilis. Ullam, rem dolore sint odit consectetur quo dolorem ipsa!</p>
       </b-carousel-slide>
     </b-carousel>
   </section>

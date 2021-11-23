@@ -58,7 +58,7 @@ export default {
             v-for="(item, index) in links"
             :key="index"
             :to="item.path"
-            exact
+            :exact="item.path == '/'"
           >
             {{ item.name }}
           </b-nav-item>
@@ -84,6 +84,7 @@ header {
   }
   .navbar {
     transition: .5s all;
+    -webkit-transition: .5s all;
     background-color: var(--color-white-01);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     &-brand {

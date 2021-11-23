@@ -5,7 +5,7 @@ export default {
   scrollToTop: true,
   head() {
     return {
-      titleTemplate: '%s - İletişim'
+      titleTemplate: '%s | İletişim'
     }
   }
 }

@@ -68,6 +68,7 @@ export default {
 .app {
   main {
     transition: .5s all;
+    -webkit-transition: .5s all;
     min-height: calc(100vh - 200px);
     display: flex;
   }
@@ -87,10 +88,11 @@ export default {
     }
     .fade-leave-to {
       transform: translatex(-100%);
-      opacity: .8;
+      opacity: .9;
     }
     .fade-enter-active, .fade-leave-active {
       transition: 2s;
+      -webkit-transition: 2s;
     }
   }
   .scroll-enter, .scroll-leave-to {
@@ -101,6 +103,7 @@ export default {
   }
   .scroll-enter-active, .scroll-leave-active {
     transition: .6s;
+    -webkit-transition: .6s;
   }
 }
 

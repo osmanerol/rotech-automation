@@ -11,7 +11,7 @@ export default {
   },
   head() {
     return {
-      titleTemplate: '%s - Anasayfa'
+      titleTemplate: '%s | Anasayfa'
     }
   },
   created() {
@@ -38,27 +38,33 @@ export default {
     this.services = [
       {
         image: 'https://images.unsplash.com/photo-1589320011103-48e428abcbae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Üretim ve Montaj Hattı'
+        title: 'Üretim ve Montaj Hattı',
+        to: '/services/productionAndMontage'
       },
       {
-        image: 'https://media.istockphoto.com/photos/cloud-network-solution-picture-id1273823720?b=1&k=20&m=1273823720&s=170667a&w=0&h=ABsUVn4aZc1_nn2ftEijeVpIBeKTiTxuAH1hFdTIo7c=',
-        title: 'Yazılım & Otomasyon'
+        image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        title: 'Yazılım & Otomasyon',
+        to: '/services/softwareAndAutomation'
       },
       {
-        image: 'https://images.unsplash.com/photo-1579803165101-cfc62dfdbe45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFjaGluZSUyMGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Özel Makina İmalatı'
+        image: 'https://images.unsplash.com/photo-1538080204498-afe921550d75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        title: 'Özel Makina İmalatı',
+        to: '/services/customMachineProduction'
       },
       {
         image: 'https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjdG9yeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-        title: 'AGV Sistemleri'
+        title: 'AGV Sistemleri',
+        to: '/services/agvSystems'
       },
       {
         image: 'https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-        title: 'Endüstriyel Görüntü İşleme'
+        title: 'Endüstriyel Görüntü İşleme',
+        to: '/services/endustrialImageProcessing'
       },
       {
         image: 'https://images.unsplash.com/photo-1535923430552-0ce3cd477cc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29udmV5b3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Konveyör Sistemleri'
+        title: 'Konveyör Sistemleri',
+        to: '/services/conveyorSystems'
       },
     ]
   }
@@ -132,13 +138,42 @@ export default {
             <service-item
               :image="item.image"
               :title="item.title"
+              :to="item.to"
             />
           </b-col>
         </b-row>
       </div>
+    </b-container>
+    <div class="consultancy">
+      <b-container>
+        <b-row>
+          <b-col
+            md="6"
+            cols="12"
+            class="consultancy-item"
+          >
+              <app-title text="Proje Danışmanlığı" />
+              <p class="content pt-2 m-0">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime et! Voluptates quam ad harum corporis cumque quaerat voluptatem consequuntur, quis velit voluptatibus, mollitia, fugit dolorum dolor delectus molestiae reprehenderit!
+              </p>
+          </b-col>
+          <b-col
+            md="6"
+            cols="12"
+            class="consultancy-item"
+          >
+            <app-title text="Endüstri 4.0 Danışmanlığı" />
+            <p class="content pt-2 m-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime et! Voluptates quam ad harum corporis cumque quaerat voluptatem consequuntur, quis velit voluptatibus, mollitia, fugit dolorum dolor delectus molestiae reprehenderit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum enim ipsam amet? Eaque id velit, iure blanditiis eligendi tempore veritatis sapiente perferendis quisquam atque! Quaerat maiores quis voluptate a. Hic.
+            </p>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
+    <b-container>
       <div class="partners">
         <app-title text="Partnerlerimiz" />
-        <b-row class="pt-5">
+        <b-row class="pt-4">
           <b-col 
             v-for="(item, index) in partners"
             :key="index"
@@ -188,13 +223,46 @@ export default {
       }
     }
   }
+  .consultancy {
+    position: relative;
+    background-color: var(--color-ui-01);
+    color: var(--color-white-01);
+    background-image: url('https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjdG9yeSUyMHJvYm90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: var(--color-ui-01);
+      opacity: .9;
+    }
+    .consultancy-item {
+      z-index: 1;
+    }
+  }
   .partners {
     .row {
       .partner-item {
-        height: 50px;
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover {
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          overflow: hidden;
+          transition: .6s;
+          -webkit-transition: .6s;
+          img {
+            transform: scale(1.05);
+            transition: .6s;
+            -webkit-transition: .6s;
+          }
+        }
       }
     }
   }
@@ -230,10 +298,7 @@ export default {
       }
     }
   }
-  .services {
-    padding-top: 120px;
-  }
-  .partners {
+  .services, .consultancy, .partners {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -268,6 +333,16 @@ export default {
     }
     .services {
       padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .consultancy {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      .row {
+        .consultancy-item:last-child{
+          margin-top: 20px;
+        }
+      }
     }
     .partners {
       padding-top: 60px;

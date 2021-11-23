@@ -4,7 +4,7 @@ export default {
   scrollToTop: true,
   head() {
     return {
-      titleTemplate: '%s - Ürünler'
+      titleTemplate: '%s | Ürünler'
     }
   }
 }

@@ -9,13 +9,22 @@ export default {
     title: {
       type: String,
       default: ''
+    },
+    to: {
+      type: String,
+      default: ''
+    }
+  },
+  methods: {
+    redirect() {
+      this.$router.push(this.to)
     }
   }
 }
 </script>
 
 <template>
-  <div class="service-item">
+  <div class="service-item" @click="redirect">
     <img 
       :src="image" 
       alt="service-item"
@@ -31,11 +40,13 @@ export default {
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
+  cursor: pointer;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: 1s;
+    -webkit-transition: 1s;
   }
   .title {
     position: absolute;
@@ -55,7 +66,7 @@ export default {
   }
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    img {
+      img {
       transform: scale(1.2);
     }
     &::after {
@@ -72,12 +83,13 @@ export default {
     background-color: var(--color-black-01);
     opacity: .5;
     transition: .6s;
+    -webkit-transition: .6s;
   }
 }
 
 @media screen and (min-width: 768px) {
   .service-item  {
-    margin-top: 40px;
+    margin-top: 30px;
     height: 260px;
     .title {
       h1 {
@@ -96,7 +108,7 @@ export default {
 
 @media screen and (max-width: 767px) {
   .service-item  {
-    margin-top: 30px;
+    margin-top: 20px;
     height: 240px;
     .title {
       h1 {

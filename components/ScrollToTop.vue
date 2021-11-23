@@ -29,12 +29,14 @@ export default {
   .icon {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: var(--color-blue-01);
+    opacity: .9;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 1;
     transition: .6s;
+    -webkit-transition: .6s;
     .b-icon {
       color: var(--color-white-01);
     }

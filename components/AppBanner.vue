@@ -51,8 +51,9 @@ export default {
     left: 0;
   }
   h1 {
+    background-color: transparent;
     color: var(--color-white-01);
-    z-index: 1;
+    z-index: 2;
   }
 }
 

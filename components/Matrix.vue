@@ -94,6 +94,7 @@ export default {
       color: var(--color-matrix-01);
       font-size: 36px;
       margin: 0;
+      font-weight: 600;
       &:first {
         padding-bottom: 10px;
       }
