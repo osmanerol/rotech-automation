@@ -20,26 +20,23 @@ export default {
       <div class="corporate-info">
         <app-title text="Hakkımızda" />
         <div class="text-content">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
+          <p>Rotech Automation Ozan Gürsoylar ve Muharrem Gül tarafından gelişen ve değişen dünya teknolojisini müşterilere en iyi şekilde sunmak adına 2021 yılında kurulmuştur. Firmamız robotik, görüntü işleme , yapay zeka , özel makine üretimi , otomasyon ve yazılım alanında hizmet vermektedir.</p>
         </div>
       </div>
       <div class="corporate-info">
         <app-title text="Vizyonumuz" />
         <div class="text-content">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
+          <p>En başta ülkemizin dışa bağımlı olduğu teknoloji alanlarında, dışa bağımlılığı kesmek yerli üretim sistemler tasarlayıp hayata geçirmek.</p>
+          <p>Değişen dünya teknolojisini en basit şekilde müşterilere sunmak.</p>
+          <p>Düzenli ve azimli çalışma anlayışı üstlenilen sorumlulukların zamanında  yerine getirilmesi, müşteri memnuniyeti</p>
         </div>
       </div>
       <div class="corporate-info">
         <app-title text="Misyonumuz" />
         <div class="text-content">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis rerum quia, reprehenderit obcaecati repellat nisi ipsam delectus, unde voluptatibus nam sunt, tempore tempora facere consequatur commodi veniam molestias itaque dolores!</p>
+          <p>Farklı endüstri alanlardaki çeşitliliğe ve standartlara uygun olarak, standart veya terzi usulü olrarak özel tasarlanmış; robotik ve mekatronik sistemler ve buna bağlı üretim tesisleri geliştirmek ve entegre etmek</p>
+          <p>Müşterilerimizin sıkıntılı süreçlerinde dar boğazdan kurtaracak sistemler ile fayda ve avantaj sağlamak.</p>
+          <p>Çözüm odakla ekonomik sistemler üretmek.</p>
         </div>
       </div>
     </b-container>

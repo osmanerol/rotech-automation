@@ -37,34 +37,24 @@ export default {
     ]
     this.services = [
       {
-        image: 'https://images.unsplash.com/photo-1589320011103-48e428abcbae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Üretim ve Montaj Hattı',
-        to: '/services/productionAndMontage'
+        image: '/_nuxt/assets/robotic-systems.jpg',
+        title: 'Robotik Sistemler',
+        to: '/services/roboticSystems'
       },
       {
-        image: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29mdHdhcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Yazılım & Otomasyon',
+        image: '/_nuxt/assets/automation-and-software.jpg',
+        title: 'Otomasyon & Yazılım',
         to: '/services/softwareAndAutomation'
       },
       {
-        image: 'https://images.unsplash.com/photo-1538080204498-afe921550d75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhY3Rvcnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+        image: '/_nuxt/assets/custom-machine-production.jpg',
         title: 'Özel Makina İmalatı',
         to: '/services/customMachineProduction'
       },
       {
-        image: 'https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZmFjdG9yeXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
-        title: 'AGV Sistemleri',
-        to: '/services/agvSystems'
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        image: '/_nuxt/assets/image-processing.jpg',
         title: 'Endüstriyel Görüntü İşleme',
         to: '/services/endustrialImageProcessing'
-      },
-      {
-        image: 'https://images.unsplash.com/photo-1535923430552-0ce3cd477cc7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y29udmV5b3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-        title: 'Konveyör Sistemleri',
-        to: '/services/conveyorSystems'
       },
     ]
   }
@@ -100,14 +90,13 @@ export default {
             cols="12"
           >
             <app-title text="Rotech Automation Hakkında" />
-            <p class="pt-2">Rotech Automation, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure amet rem debitis labore culpa, reiciendis ex temporibus nam optio, consequatur rerum eligendi dolores suscipit omnis voluptates ab explicabo eos.</p>
-            <p>Rotech Automation, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iure amet rem debitis labore culpa, reiciendis ex temporibus nam optio, consequatur rerum eligendi dolores suscipit omnis voluptates ab explicabo eos.</p>
+            <p class="pt-2">Rotech Automation Ozan Gürsoylar ve Muharrem Gül tarafından gelişen ve değişen dünya teknolojisini müşterilere en iyi şekilde sunmak adına 2021 yılında kurulmuştur. Firmamız robotik, görüntü işleme, yapay zeka, özel makine üretimi, otomasyon ve yazılım alanında hizmet vermektedir.</p>
             <div class="pt-2">
               <NuxtLink 
                 to="/corporate"
                 class="about-button"
               >
-                Hakkımızda
+                Kurumsal
               </NuxtLink>
             </div>
           </b-col>
@@ -117,7 +106,7 @@ export default {
             cols="12"
           >
             <img 
-              src="https://images.unsplash.com/photo-1563968743333-044cef800494?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1058&q=80"
+              src="~/assets/home-corporate.jpg"
               alt="automation-info"
             />
           </b-col>
@@ -144,7 +133,7 @@ export default {
         </b-row>
       </div>
     </b-container>
-    <div class="consultancy">
+    <div v-if="false" class="consultancy">
       <b-container>
         <b-row>
           <b-col
@@ -298,8 +287,11 @@ export default {
       }
     }
   }
-  .services, .consultancy, .partners {
+  .services, .consultancy {
     padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .partners {
     padding-bottom: 120px;
   }
 }
@@ -345,7 +337,7 @@ export default {
       }
     }
     .partners {
-      padding-top: 60px;
+      // padding-top: 60px;
       padding-bottom: 60px;
       .row {
         .partner-item {

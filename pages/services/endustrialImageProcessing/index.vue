@@ -35,7 +35,7 @@ export default {
   <section class="sub-service">
     <app-banner 
       content="Hizmetler" 
-      image-source="https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNvZnR3YXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+      image-source="/_nuxt/assets/image-processing.jpg" 
     />
     <b-container>
       <div class="breadcrumb-container">
@@ -43,10 +43,9 @@ export default {
       </div>
       <app-title text="Endüstriyel Görüntü İşleme" />
       <div class="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nobis facere at corporis harum animi enim nihil quasi ea molestiae quas, ratione molestias? Quidem eos iure et dignissimos placeat dolorem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nulla illum, eos eum illo deserunt eaque id quia fugiat suscipit, maxime, quae nihil officiis. Eligendi iusto laudantium mollitia corrupti ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum harum magni libero quaerat consectetur, quisquam dolor laborum quibusdam tenetur ducimus sapiente atque! Soluta quasi veritatis, illo quae ipsam quam voluptatibus.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat illum voluptatum? Laborum velit, temporibus voluptates mollitia impedit aliquam ducimus quisquam, repellendus soluta voluptatum sapiente corporis a ipsum cumque corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio officia laudantium, recusandae sit facere ducimus deleniti soluta dicta modi minus hic error nam libero eligendi inventore deserunt! Quibusdam, porro.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, tempore ipsam a quos placeat molestiae et quibusdam, minus sapiente reprehenderit doloribus libero temporibus ratione earum debitis perspiciatis architecto laborum ea?</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo placeat illum voluptatum? Laborum velit, temporibus voluptates mollitia impedit aliquam ducimus quisquam, repellendus soluta voluptatum sapiente corporis a ipsum cumque corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odio officia laudantium, recusandae sit facere ducimus deleniti soluta dicta modi minus hic error nam libero eligendi inventore deserunt! Quibusdam, porro.</p>
+        <p>Otomasyonlu endüstri alanlarımızda endüstriyel görüntü işleme çağımızda giderek daha fazla önem kazanmaktadır. Teknolojik sistemler birçok görev için kamera sistemi kullanılmasına imkân sağlamakta olup tesislerinizin güvenilirliği ve işlevselliği açısında önemli derecede artı katmaktadır.</p>
+        <p>Endüstriyel görüntü işleme, çoğunlukla üretim hattına kurulan (birkaç) özel kamera veya görüntüleme sisteminin kullanımına dayanır. Endüstriyel görüntü işlemenin ikinci zorunlu bileşeni, bu görüntüyü anlaşılabilir hale getirip gerekli sistem ile adaptasyonudur.</p>
+        <p>Endüstriyel görüntü işleme, çoğunlukla üretim hattına kurulan (birkaç) özel kamera veya görüntüleme sisteminin kullanımına dayanır. Endüstriyel görüntü işlemenin ikinci zorunlu bileşeni, bu görüntüyü anlaşılabilir hale getirip gerekli sistem ile adaptasyonudur.</p>
       </div>
     </b-container>
   </section>
@@ -63,7 +62,7 @@ export default {
       padding-top: 40px;
       padding-bottom: 60px;
       .content {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
   }

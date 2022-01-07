@@ -63,7 +63,7 @@ export default {
       padding-top: 40px;
       padding-bottom: 60px;
       .content {
-        margin-top: 20px;
+        margin-top: 30px;
       }
     }
   }

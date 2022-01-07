@@ -14,7 +14,7 @@ export default {
   computed: {
     scssVariables() {
       return {
-        '--background-image': `url(${this.imageSource})`
+        backgroundImage: `url(${this.imageSource})`
       }
     }
   }
@@ -35,7 +35,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
