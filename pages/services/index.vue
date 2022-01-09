@@ -15,22 +15,22 @@ export default {
   created() {
     this.services = [
       {
-        image: '/_nuxt/assets/robotic-systems.jpg',
+        image: '/robotic-systems.jpg',
         title: 'Robotik Sistemler',
         to: '/services/roboticSystems'
       },
       {
-        image: '/_nuxt/assets/automation-and-software.jpg',
+        image: '/automation-and-software.jpg',
         title: 'Otomasyon & Yazılım',
         to: '/services/softwareAndAutomation'
       },
       {
-        image: '/_nuxt/assets/custom-machine-production.jpg',
+        image: '/custom-machine-production.jpg',
         title: 'Özel Makina İmalatı',
         to: '/services/customMachineProduction'
       },
       {
-        image: '/_nuxt/assets/image-processing.jpg',
+        image: '/image-processing.jpg',
         title: 'Endüstriyel Görüntü İşleme',
         to: '/services/endustrialImageProcessing'
       },
@@ -43,7 +43,7 @@ export default {
   <section class="services">
     <app-banner 
       content="Hizmetler" 
-      image-source="/_nuxt/assets/services-home.jpg" 
+      image-source="/services-home.jpg" 
       />
     <b-container>
       <app-title text="Hizmetlerimiz" />

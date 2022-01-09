@@ -14,7 +14,7 @@ export default {
   <section class="corporate">
     <app-banner 
       content="Kurumsal" 
-      image-source="https://images.unsplash.com/photo-1563968743333-044cef800494?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" 
+      image-source="/home-corporate.jpg" 
     />
     <b-container >
       <div class="corporate-info">
@@ -28,13 +28,13 @@ export default {
         <div class="text-content">
           <p>En başta ülkemizin dışa bağımlı olduğu teknoloji alanlarında, dışa bağımlılığı kesmek yerli üretim sistemler tasarlayıp hayata geçirmek.</p>
           <p>Değişen dünya teknolojisini en basit şekilde müşterilere sunmak.</p>
-          <p>Düzenli ve azimli çalışma anlayışı üstlenilen sorumlulukların zamanında  yerine getirilmesi, müşteri memnuniyeti</p>
+          <p>Düzenli ve azimli çalışma anlayışı üstlenilen sorumlulukların zamanında  yerine getirilmesi, müşteri memnuniyeti.</p>
         </div>
       </div>
       <div class="corporate-info">
         <app-title text="Misyonumuz" />
         <div class="text-content">
-          <p>Farklı endüstri alanlardaki çeşitliliğe ve standartlara uygun olarak, standart veya terzi usulü olrarak özel tasarlanmış; robotik ve mekatronik sistemler ve buna bağlı üretim tesisleri geliştirmek ve entegre etmek</p>
+          <p>Farklı endüstri alanlardaki çeşitliliğe ve standartlara uygun olarak, standart veya terzi usulü olrarak özel tasarlanmış; robotik ve mekatronik sistemler ve buna bağlı üretim tesisleri geliştirmek ve entegre etmek.</p>
           <p>Müşterilerimizin sıkıntılı süreçlerinde dar boğazdan kurtaracak sistemler ile fayda ve avantaj sağlamak.</p>
           <p>Çözüm odakla ekonomik sistemler üretmek.</p>
         </div>

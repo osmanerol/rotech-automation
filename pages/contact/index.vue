@@ -15,7 +15,7 @@ export default {
   <section class="contact">
     <app-banner 
       content="İletişim" 
-      image-source="https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" 
+      image-source="/slider1.jpg" 
       />
     <b-container>
       <div class="contact-info">
@@ -72,12 +72,6 @@ export default {
                     class="youtube-icon"
                   >
                     <b-icon icon="youtube" />
-                  </a>
-                  <a
-                    href="mailto:info@rotechautomation.com"
-                    class="mail-icon"
-                  >
-                    <b-icon icon="envelope-fill" />
                   </a>
                 </li>
               </ul>

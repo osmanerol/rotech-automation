@@ -29,30 +29,24 @@ export default {
         text: 'Devreye aldığımız otomasyon ve robot sistemlerinin mühendislik çalışmalarını prosesinize tam uyumlu ve esnek bir şekilde gerçekleştiriyoruz.'
       },
     ]
-    this.partners = [
-      'https://www.robomaker.com.tr/uploads/f-1_op.jpg',
-      'https://www.robomaker.com.tr/uploads/f-2_op.jpg',
-      'https://www.robomaker.com.tr/uploads/f-3_op.jpg',
-      'https://www.robomaker.com.tr/uploads/f-4_op.jpg',
-    ]
     this.services = [
       {
-        image: '/_nuxt/assets/robotic-systems.jpg',
+        image: '/robotic-systems.jpg',
         title: 'Robotik Sistemler',
         to: '/services/roboticSystems'
       },
       {
-        image: '/_nuxt/assets/automation-and-software.jpg',
+        image: '/automation-and-software.jpg',
         title: 'Otomasyon & Yazılım',
         to: '/services/softwareAndAutomation'
       },
       {
-        image: '/_nuxt/assets/custom-machine-production.jpg',
+        image: '/custom-machine-production.jpg',
         title: 'Özel Makina İmalatı',
         to: '/services/customMachineProduction'
       },
       {
-        image: '/_nuxt/assets/image-processing.jpg',
+        image: '/image-processing.jpg',
         title: 'Endüstriyel Görüntü İşleme',
         to: '/services/endustrialImageProcessing'
       },
@@ -106,7 +100,7 @@ export default {
             cols="12"
           >
             <img 
-              src="~/assets/home-corporate.jpg"
+              src="/home-corporate.jpg"
               alt="automation-info"
             />
           </b-col>
@@ -133,33 +127,9 @@ export default {
         </b-row>
       </div>
     </b-container>
-    <div v-if="false" class="consultancy">
-      <b-container>
-        <b-row>
-          <b-col
-            md="6"
-            cols="12"
-            class="consultancy-item"
-          >
-              <app-title text="Proje Danışmanlığı" />
-              <p class="content pt-2 m-0">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime et! Voluptates quam ad harum corporis cumque quaerat voluptatem consequuntur, quis velit voluptatibus, mollitia, fugit dolorum dolor delectus molestiae reprehenderit!
-              </p>
-          </b-col>
-          <b-col
-            md="6"
-            cols="12"
-            class="consultancy-item"
-          >
-            <app-title text="Endüstri 4.0 Danışmanlığı" />
-            <p class="content pt-2 m-0">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, maxime et! Voluptates quam ad harum corporis cumque quaerat voluptatem consequuntur, quis velit voluptatibus, mollitia, fugit dolorum dolor delectus molestiae reprehenderit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum enim ipsam amet? Eaque id velit, iure blanditiis eligendi tempore veritatis sapiente perferendis quisquam atque! Quaerat maiores quis voluptate a. Hic.
-            </p>
-          </b-col>
-        </b-row>
-      </b-container>
-    </div>
-    <b-container>
+    <b-container
+      v-if="partners.length > 0"
+    >
       <div class="partners">
         <app-title text="Partnerlerimiz" />
         <b-row class="pt-4">
@@ -210,28 +180,6 @@ export default {
           }
         }
       }
-    }
-  }
-  .consultancy {
-    position: relative;
-    background-color: var(--color-ui-01);
-    color: var(--color-white-01);
-    background-image: url('https://images.unsplash.com/photo-1561634507-b0cd27bf0aa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZmFjdG9yeSUyMHJvYm90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    &::after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: var(--color-ui-01);
-      opacity: .9;
-    }
-    .consultancy-item {
-      z-index: 1;
     }
   }
   .partners {
@@ -287,7 +235,7 @@ export default {
       }
     }
   }
-  .services, .consultancy {
+  .services {
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -326,15 +274,6 @@ export default {
     .services {
       padding-top: 60px;
       padding-bottom: 60px;
-    }
-    .consultancy {
-      padding-top: 60px;
-      padding-bottom: 60px;
-      .row {
-        .consultancy-item:last-child{
-          margin-top: 20px;
-        }
-      }
     }
     .partners {
       // padding-top: 60px;

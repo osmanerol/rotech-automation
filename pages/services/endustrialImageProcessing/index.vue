@@ -35,7 +35,7 @@ export default {
   <section class="sub-service">
     <app-banner 
       content="Hizmetler" 
-      image-source="/_nuxt/assets/image-processing.jpg" 
+      image-source="/image-processing.jpg" 
     />
     <b-container>
       <div class="breadcrumb-container">

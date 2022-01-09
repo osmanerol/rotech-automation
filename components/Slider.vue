@@ -9,11 +9,11 @@ export default {
   created() {
     this.slideContents = [
       {
-        image: 'slider1',
+        image: '/slider1.jpg',
         caption: 'More technology for the future',
       },
       {
-        image: 'slider2',
+        image: '/slider2.jpg',
         caption: "You want it, We'll do it",
       },
     ]
@@ -41,7 +41,7 @@ export default {
             class="d-block img-fluid w-100 h-100"
             width="1024"
             height="580"
-            :src="require(`~/assets/${item.image}.jpg`)"
+            :src="item.image"
             alt="image slot"
           >
         </template>

@@ -111,12 +111,6 @@ export default {
                 >
                   <b-icon icon="youtube" />
                 </a>
-                <a
-                  href="mailto:info@rotechautomation.com"
-                  class="mail-icon"
-                >
-                  <b-icon icon="envelope-fill" />
-                </a>
               </li>
             </ul>
           </div>
