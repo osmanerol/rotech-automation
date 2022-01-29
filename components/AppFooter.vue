@@ -73,20 +73,30 @@ export default {
             <ul>
               <li>
                 <b-icon icon="geo-alt-fill" />
-                <span>Merkez Caddesi Merkez Sokak No: 20 Yunusemre / Manisa</span>
+                <span>Hafsa Sultan Mahallesi Mimar Sinan Bulvarı No: 176 İç Kapı No: 4 Berel Ofis Yunusemre-Manisa</span>
               </li>
               <li>
                 <b-icon icon="telephone-fill" />
-                <span>0850 123 12 13</span>
+                <span>0555 687 67 78</span>
               </li>
               <li>
                 <b-icon icon="envelope-fill" />
                 <a 
-                  href="mailto:info@rotechautomation.com"
+                  href="mailto:proje@rotechautomation.com.tr"
                   class="mail-link"
-                >info@rotechautomation.com</a>
+                >
+                  proje@rotechautomation.com.tr
+                </a>
               </li>
               <li class="social-icons">
+                <a 
+                  href="https://tr.linkedin.com/company/rotechautomation"
+                  class="linkedin-icon"
+                  target="blank"
+                >
+                  <b-icon icon="linkedin" />
+                </a>
+                <!--
                 <a 
                   href="https://www.facebook.com" 
                   class="facebook-icon"
@@ -99,18 +109,13 @@ export default {
                 >
                   <b-icon icon="instagram" />
                 </a>
-                <a 
-                  href="https://www.linkedin.com"
-                  class="linkedin-icon"
-                >
-                  <b-icon icon="linkedin" />
-                </a>
                 <a
                   href="https://www.youtube.com"
                   class="youtube-icon"
                 >
                   <b-icon icon="youtube" />
                 </a>
+                -->
               </li>
             </ul>
           </div>

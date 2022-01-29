@@ -51,7 +51,7 @@ export default {
     >
       <b-container>
         <b-navbar-brand to="/">
-          ROTECH AUTOMATION
+          <img src="/logo.png" alt="logo">
         </b-navbar-brand>
         <b-navbar-nav class="ml-auto d-lg-flex d-none">
           <b-nav-item
@@ -93,6 +93,10 @@ header {
       &:hover, &:focus {
         color: var(--color-black-01);
       }
+      img {
+        width: 100%;
+        height: inherit;
+      }
     }
     .navbar-nav {
       .nav-item {
@@ -129,6 +133,11 @@ header {
     }
     .navbar {
       height: 90px;
+      &-brand {
+        width: 140px;
+        height: 60px;
+        margin-bottom: 12px;
+      }
     }
   }
 }
@@ -140,6 +149,11 @@ header {
     }
     .navbar {
       height: 70px;
+      &-brand {
+        width: 120px;
+        height: 60px;
+        margin-bottom: 12px;
+      }
     }
   }
 }

@@ -33,22 +33,30 @@ export default {
               <ul class="pt-3">
                 <li>
                   <b-icon icon="geo-alt-fill" />
-                  <span>Merkez Caddesi Merkez Sokak No: 20 Yunusemre / Manisa</span>
+                  <span>Hafsa Sultan Mahallesi Mimar Sinan Bulvarı No: 176 İç Kapı No: 4 <br> Berel Ofis Yunusemre-Manisa</span>
                 </li>
                 <li>
                   <b-icon icon="telephone-fill" />
-                  <span>0850 123 12 13</span>
+                  <span>0555 687 67 78</span>
                 </li>
                 <li>
                   <b-icon icon="envelope-fill" />
                   <a 
-                    href="mailto:info@rotechautomation.com"
+                    href="mailto:proje@rotechautomation.com.tr"
                     class="mail-link"
                   >
-                    info@rotechautomation.com
+                    proje@rotechautomation.com.tr
                   </a>
                 </li>
                 <li class="social-icons">
+                  <a 
+                    href="https://tr.linkedin.com/company/rotechautomation"
+                    class="linkedin-icon"
+                    target="blank"
+                  >
+                    <b-icon icon="linkedin" />
+                  </a>
+                  <!--
                   <a 
                     href="https://www.facebook.com" 
                     class="facebook-icon"
@@ -61,18 +69,13 @@ export default {
                   >
                     <b-icon icon="instagram" />
                   </a>
-                  <a 
-                    href="https://www.linkedin.com"
-                    class="linkedin-icon"
-                  >
-                    <b-icon icon="linkedin" />
-                  </a>
                   <a
                     href="https://www.youtube.com"
                     class="youtube-icon"
                   >
                     <b-icon icon="youtube" />
                   </a>
+                  -->
                 </li>
               </ul>
             </div>
@@ -82,7 +85,7 @@ export default {
             md="6"
             xs="12"
           >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d398614.8319721873!2d27.083787564470807!3d38.69074673628185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99ac7a65549b7%3A0xdb68e0025a44d76f!2sManisa%20Merkez!5e0!3m2!1str!2str!4v1637430795471!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3117.411826983455!2d27.404715951208207!3d38.61640597951487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99c8acb360c85%3A0x4e142761a17d660a!2sHafsa%20Sultan%2C%20Mimar%20Sinan%20Blv.%20No%3A176%2C%2045030%20Manisa%20Merkez%2FManisa!5e0!3m2!1str!2str!4v1643457124624!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </b-col>
         </b-row>
       </div>

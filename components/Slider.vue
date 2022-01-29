@@ -10,10 +10,18 @@ export default {
     this.slideContents = [
       {
         image: '/slider1.jpg',
-        caption: 'More technology for the future',
+        caption: '',
       },
       {
         image: '/slider2.jpg',
+        caption: 'More technology for the future',
+      },
+      {
+        image: '/slider3.jpg',
+        caption: '',
+      },
+      {
+        image: '/slider4.jpg',
         caption: "You want it, We'll do it",
       },
     ]
