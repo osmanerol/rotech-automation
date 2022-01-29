@@ -20,10 +20,12 @@ export default {
         image: '/slider3.jpg',
         caption: '',
       },
+      /*
       {
         image: '/slider4.jpg',
         caption: "You want it, We'll do it",
       },
+      */
     ]
   }
 }
