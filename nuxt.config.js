@@ -14,7 +14,7 @@ export default {
       { hid: 'og-type', property: 'og:type', content: 'website' },
       { hid: 'og-title', property: 'og:title', content: 'Rotech Automation | More technology for the future' },
       { hid: 'og-desc', property: 'og:description', content: 'Firmamız robotik, görüntü işleme, yapay zeka, özel makine üretimi, otomasyon ve yazılım alanında hizmet vermektedir.' },
-      { hid: 'og-image', property: 'og:image', content: '/static/logo.jpg' },
+      { hid: 'og-image', property: 'og:image', content: 'https://www.rotechautomation.com.tr/logo.jpg' },
       { hid: 'og-url', property: 'og:url', content: 'https://www.rotechautomation.com.tr' },
     ],
     link: [
