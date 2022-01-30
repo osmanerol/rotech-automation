@@ -34,9 +34,9 @@ export default {
       <div class="corporate-info">
         <app-title text="Misyonumuz" />
         <div class="text-content">
-          <p>Farklı endüstri alanlardaki çeşitliliğe ve standartlara uygun olarak, standart veya terzi usulü olrarak özel tasarlanmış; robotik ve mekatronik sistemler ve buna bağlı üretim tesisleri geliştirmek ve entegre etmek.</p>
+          <p>Farklı endüstri alanlardaki çeşitliliğe ve standartlara uygun olarak, standart veya terzi usulü özel olarak özel tasarlanmış; robotik ve mekatronik sistemler ve buna bağlı üretim tesisleri geliştirmek ve entegre etmek.</p>
           <p>Müşterilerimizin sıkıntılı süreçlerinde dar boğazdan kurtaracak sistemler ile fayda ve avantaj sağlamak.</p>
-          <p>Çözüm odakla ekonomik sistemler üretmek.</p>
+          <p>Çözüm odaklı ekonomik sistemler üretmek.</p>
         </div>
       </div>
     </b-container>
