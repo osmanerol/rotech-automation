@@ -8,8 +8,14 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'title', name: 'title', content: 'Rotech Automation | More technology for the future' },
+      { hid: 'description', name: 'description', content: 'Firmamız robotik, görüntü işleme, yapay zeka, özel makine üretimi, otomasyon ve yazılım alanında hizmet vermektedir.' },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-title', property: 'og:title', content: 'Rotech Automation | More technology for the future' },
+      { hid: 'og-desc', property: 'og:description', content: 'Firmamız robotik, görüntü işleme, yapay zeka, özel makine üretimi, otomasyon ve yazılım alanında hizmet vermektedir.' },
+      { hid: 'og-image', property: 'og:image', content: '/logo.png' },
+      { hid: 'og-url', property: 'og:url', content: 'https://www.rotechautomation.com.tr' },
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' },
